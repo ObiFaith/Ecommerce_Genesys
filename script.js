@@ -1,21 +1,8 @@
-// On scroll chanage nav bar bg color
-$(document).ready(function() {
-    // Function to change the background color of the navbar on scroll
-    function changeNavbarBackground() {
-      var navbar = document.getElementById("navbar");
-      var offset = 100; //Determines when the background color changes
-
-      if (window.pageYOffset > offset) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    }
-
-    // Attaching the scroll event listener to the window
-    window.addEventListener("scroll", changeNavbarBackground);
-  });
-
+// Nav Bar Scrolling Change
+window.addEventListener("scroll", function () {
+  let navbar = document.querySelector(".nav");
+  navbar.classList.toggle("scrolled", window.scrollY > 0);
+})
 
 //  Owl Carousel
  $(document).ready(function() {
@@ -25,15 +12,15 @@ $(document).ready(function() {
       responsiveClass: true,
       responsive: {
         0: {
-          items: 1.5,
+          items: 1.2,
         },
-        600: {
+        500: {
           items: 2.5,
         },
-        900: {
+        600: {
           items: 3.5,
         },
-        1200: {
+        900: {
           items: 4.5,
         },
       },
@@ -45,9 +32,17 @@ $(document).ready(function() {
     $(".fa-arrow-circle-left").click(function() {
       owl.trigger("prev.owl.carousel");
     });
-
     // Handle right arrow click
     $(".fa-arrow-circle-right").click(function() {
       owl.trigger("next.owl.carousel");
     });
   });
+
+
+// Hamburger
+const hamMenu = document.querySelector(".hamburger-menu");
+const offScreenMenu = document.querySelector(".nav-links");
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});

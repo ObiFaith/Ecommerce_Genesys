@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
+  /* border: 2px solid red; */
 }
 
 a {
@@ -159,6 +160,10 @@ header {
   cursor: pointer;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .nav {
   position: fixed;
   width: 100%;
@@ -167,12 +172,13 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding: 15px 0 16px;
+  padding: 15px 8%;
   z-index: 4;
 }
 
 .nav.scrolled {
-    background-color: var(--secondary-bg-clr)
+    background-color: var(--secondary-bg-clr);
+    transition: 1s;
   }
 
 .nav a {
@@ -253,6 +259,10 @@ header {
   margin: 30px 0;
 }
 
+.featured-text{
+  width: 45;
+}
+
 .featured-text h2 {
   font-size: 2.1875rem;
   font-style: normal;
@@ -309,9 +319,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 55%;
 }
 
-.featured-content div {
+.featured-content .featured-box {
   width: 45%;
   display: flex;
   flex-direction: column;
@@ -319,26 +330,17 @@ header {
   justify-content: center;
 }
 
-.featured-content p {
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.00938rem;
-  color: var(--primary-color);
+.featured-content .featured-box .featured-img{
+  width: 100%;
 }
 
-.featured-content h3 {
-  font-size: 1.3125rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.00938rem;
-  color: var(--primary-color);
+.featured-content .featured-box .featured-img img{
+  width: 100%;
 }
+
+
 
 /* hot deals sec styling */
-
 .deals {
   display: flex;
   flex-direction: column;
@@ -351,20 +353,28 @@ header {
 
 .deals-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
-.deals-content div {
-  width: 23%;
+.deals-content .deals-box {
+  width: 24%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 15px;
+  justify-content: space-between;
+  margin: 15px 0;
 }
 
-.deals-content p {
+.deals-box .deals-img{
+  width: 100%;
+  height: 200px;
+}
+.deals-box .deals-img img{
+  width: 100%;
+  height: 200px;
+}
+.deals-box .deals-text p {
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -375,7 +385,7 @@ header {
   margin-top: 10px;
 }
 
-.deals-content h3 {
+.deals-box .deals-text h3 {
   font-size: 1.3125rem;
   font-style: normal;
   font-weight: 700;
@@ -569,6 +579,7 @@ footer .foot-top a {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.15px;
+  transition: 1s;
 }
 
 footer .foot-top a:hover {
@@ -588,6 +599,7 @@ footer .foot-top h3 {
 footer .foot-top li {
   list-style-type: none;
   margin: 10px 0;
+  transition: 1s;
 }
 
 footer .partners {
@@ -604,4 +616,469 @@ footer .partners h1 {
   line-height: normal;
   letter-spacing: 0.15px;
   margin-bottom: 15px;
+}
+
+
+/* Desktop, laptop and tablet responsiveness */
+@media screen and (max-width: 1365px) {
+  .nav a {
+    margin: 0 5px;
+  }
+}
+@media screen and (max-width: 1042px) {
+  .nav a {
+    font-size: 14px;
+    margin: 0 2px;
+  }
+  .hero-nav {
+    padding: 5px 4%;
+  }
+  .hero-content {
+    padding-left: 5%;
+  }
+  .nav {
+    padding: 15px 4%;
+  }
+  .featured {
+    padding: 30px 4%;
+  }
+  .deals {
+    padding: 30px 4%;
+  }
+  .categories {
+    padding: 30px 4%;
+  }
+  .why {
+    padding: 30px 4%;
+  }
+  footer {
+    padding: 30px 4%;
+  }
+}
+
+@media screen and (max-width: 840px){
+  .access-box a,
+.access-nav-bottom a, .access-nav-bottom select, .access-box {
+  padding-right: 8px;
+  font-size: 13px;
+  letter-spacing: 0.00938rem;
+}
+.hero-nav-bar .logo{
+  width: 100px;
+}
+.hero-nav-bar .logo img{
+  width: 100%;
+}
+.hero-nav .search {
+  width: 60%;
+}
+
+.hero-nav input {
+  padding: 7px;
+  width: 65%;
+}
+
+.hero-nav button {
+  padding: 7px;
+  width: 20%;
+}
+
+.hero-nav .icons .fa {
+  font-size: 20px;
+  padding-left: 8px;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 70px;
+  padding: 15px 4% 8px;
+}
+.nav a {
+  color: var(--secondary-color);
+  font-size: 10px;
+  letter-spacing: 0.00938rem;
+  padding: 5px;
+  margin: 0 3px;
+}
+
+.nav a:first-child {
+  width: auto;
+}
+.hero-content {
+  top: 200px;
+  padding-left: 4%;
+}
+
+.hero-content h1 {
+  font-size: 35px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  width: 400px;
+  margin: 20px 0;
+}
+
+.hero-content button {
+  padding: 15px 10px;
+  width: 150px;
+}
+
+/* featured section styling */
+.featured-text h2 {
+  font-size: 25px;
+}
+
+.featured-text p {
+  font-size: 16px;
+  margin: 10px 0;
+  width: 250px;
+}
+
+.featured-text .btn {
+  font-size: 12px;
+  padding: 10px 5px;
+  width: 100px;
+}
+.featured-content .featured-box .featured-text p {
+  font-size: 12px;
+}
+
+.featured-content .featured-box .featured-text h3 {
+  font-size: 16px;
+}
+/* hot deals sec styling */
+.deals-box .deals-img{
+  height: 150px;
+}
+.deals-box .deals-img img{
+  height: 150px;
+}
+.deals-box .deals-text p {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.deals-box .deals-text h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.categories .dir-arrows .fa {
+  font-size: 25px;
+}
+
+/* Why section styling */
+
+.why .why-text h2 {
+  font-size: 24px;
+}
+
+.why .why-text p {
+  font-size: 16px;
+  margin: 15px 0;
+  width: 310px;
+}
+
+.why .why-text button {
+  font-size: 0.875rem;
+  padding: 10px;
+  width: 150px;
+}
+
+.why .why-box {
+  padding: 10px;
+  border-radius: 5px;
+}
+.why-box p {
+    margin: 10px 0;
+    font-size: 13px;
+  }
+
+  .why-box h3{
+    font-size: 16px;
+  }
+
+.why .why-box .span1 {
+    border-radius: 3px;
+    font-size: 14px;
+}
+.why .why-box .span2 {
+    font-size: 14px;
+}
+
+/* Footer section styling */
+footer .foot-top div {
+  margin: 0 10px;
+}
+
+footer .foot-top a {
+  font-size: 14px;
+}
+
+footer .foot-top h3 {
+  font-size: 16px;
+}
+footer .partners h1 {
+  font-size: 18px;
+}
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 652px){
+  .top-nav {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .hero-nav{
+    flex-direction: column-reverse;
+  }
+  .hero-nav .search {
+    display: none;
+  }
+
+
+  .hamburger-menu {
+    display: block;
+    height: 40px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+    z-index: 2;
+  }
+
+  .ham-bar {
+    width: 71%;
+    height: 4px;
+    background-color: var(--secondary-bg-clr);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .8s, top .6s;
+  }
+
+  .bar-top {
+    top: 25%;
+  }
+
+  .bar-bottom {
+    top: 75%;
+  }
+
+  .hamburger-menu.active .bar-top {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+  }
+
+  .hamburger-menu.active .bar-mid {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .bar-bottom {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+  }
+
+  .nav-links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    right: -100%;
+    height: 380px;
+    width: 100%;
+    transition: right .5s;
+    background: var(--secondary-bg-clr);
+    box-shadow: 2px 1px 2px var(--primary-bg-clr);
+    text-align: center;
+    z-index: 4;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  .nav-links a:nth-child(1){
+    margin-top: 25px;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content h1 {
+    text-align: center;
+    font-size: 40px;
+    width: 350px;
+  }
+  
+  .hero-content p {
+    text-align: center;
+    font-size: 24px;
+    width: 350px;
+  }
+  .hero-content button{
+    width: 70%;
+  }
+  
+
+  .featured {
+   flex-direction: column;
+    margin: 30px 0;
+  }
+  
+  .featured-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .featured-text h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  .featured-text p {
+    text-align: center;
+    width: 80%;
+    font-size: 24px;
+  }
+  
+  .featured-text .btn {
+    width: 150px;
+  }
+  
+  .featured-content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .featured-content .featured-box .featured-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .featured-content .featured-box .featured-text h3 {
+    font-size: 1.3125rem;
+    text-align: center;
+  }
+  
+  .featured-content .featured-box {
+    width: 100%;
+  }
+  
+  .deals {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .deals-content {
+    flex-direction: column;
+  }
+  
+  .deals-content .deals-box {
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  .deals-box .deals-img{
+    height: 300px;
+  }
+  .deals-box .deals-img img{
+    height: 300px;
+  }
+  .deals-box .deals-text p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .deals-box .deals-text h3 {
+    font-size: 1.3125rem;
+    margin-bottom: 10px;
+  }
+
+  .deals h2{
+    font-size: 35px;
+  }
+
+  .categories h2{
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .why {
+   flex-direction: column;
+  }
+  
+  .why .why-text h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .why .why-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .why .why-text p {
+    font-size: 21px;
+    text-align: center;
+  }
+  
+  .why .why-text button {
+    font-size: 0.875rem;
+    width: 150px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .foot-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px 0;
+  }
+  
+  footer .foot-top div {
+    margin: 0;
+  }
+ 
+  footer .foot-top h3 {
+    margin: 20px 0;
+  }
+  footer .partners {
+    margin-top: 50px;
+  }
+  footer .partners  h1{
+    text-align: center;
+  }
+  footer .partners img{
+    width: 100%;
+  }
 }

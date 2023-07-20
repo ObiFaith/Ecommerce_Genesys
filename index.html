@@ -14,7 +14,6 @@
 <body>
   <!-- hero section -->
   <header>
-    <!-- hero section -->
     <section class="hero">
       <div class="hero-nav">
         <div class="hero-nav-up">
@@ -51,12 +50,18 @@
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
           </div>
+
+          <div class="hamburger-menu">
+            <div class="ham-bar bar-top"></div>
+            <div class="ham-bar bar-mid"></div>
+            <div class="ham-bar bar-bottom"></div>
+          </div>
         </div>
       </div>
 
-      <div class="nav" id="navbar">
+      <div class="nav nav-links" id="navLinks">
         <a href="">Home</a>
-        <a href="">Saved</a>
+        <a href=""><i class="fa fa-heart" aria-hidden="true"></i> Saved</a>
         <a href="">Electronics</a>
         <a href="">Latest Deals</a>
         <a href="">New Arrivals</a>
@@ -68,7 +73,7 @@
 
       <div class="hero-content">
         <h1>Technology For Your Convenience</h1>
-        <p>Get The Latest Gadget And Electronics At A Affordable Prices </p>
+        <p>Get The Latest Gadget And Electronics At An Affordable Prices </p>
         <button>Shop Now</button>
       </div>
     </section>
@@ -79,18 +84,28 @@
     <div class="featured-text">
       <h2>Featured Products</h2>
       <p>Check out our top-rated products</p>
-      <button class="btn white">View Details</button> <button class="btn clr" id="btn">Shop</button>
+      <div>
+        <button class="btn white">View Details</button> <button class="btn clr" id="btn">Shop</button>
+      </div>
     </div>
     <div class="featured-content">
-      <div>
-        <img src="img/featured-1.png" alt="">
-        <p>iPhone 14 pro</p>
-        <h3>Price:N930,000</h3>
+      <div class="featured-box">
+        <div class="featured-img">
+          <img src="img/featured-1.png" alt="">
+        </div>
+        <div class="featured-text">
+          <p>iPhone 14 pro</p>
+        <h3>Price:NGN 930,000</h3>
+        </div>
       </div>
-      <div>
+      <div class="featured-box">
+       <div class="featured-img">
         <img src="img/featured-2.png" alt="">
-        <p>iPhone 14 pro</p>
-        <h3>Price:N930,000</h3>
+       </div>
+        <div class="featured-text">
+          <p>Dell XPS 17</p>
+        <h3>Price: NGN 230,000</h3>
+        </div>
       </div>
     </div>
   </section>
@@ -99,25 +114,41 @@
   <section class="deals">
     <h2>Daily Deals</h2>
     <div class="deals-content">
-      <div>
-        <img src="img/deal-1.png" alt="">
-        <p>Samsung Galaxy S22 Ultra 5G</p>
-        <h3>Price: N550,000</h3>
+      <div class="deals-box">
+        <div class="deals-img">
+          <img src="img/deal-1.png" alt="">
+        </div>
+        <div class="deals-text">
+          <p>Samsung Galaxy S22 Ultra 5G</p>
+        <h3>Price: NGN550,000</h3>
+        </div>
       </div>
-      <div>
-        <img src="img/deal-2.png" alt="">
-        <p>LG 65” 4k UHD OLED Smart TV</p>
-        <h3>Price: N1,300,000</h3>
+      <div class="deals-box">
+        <div class="deals-img">
+          <img src="img/deal-2.png" alt="">
+        </div>
+        <div class="deals-text">
+          <p>LG 65” 4k UHD OLED Smart TV</p>
+        <h3>Price: NGN1,300,000</h3>
+        </div>
       </div>
-      <div>
-        <img src="img/deal-3.png" alt="">
+      <div class="deals-box">
+        <div class="deals-img">
+          <img src="img/deal-3.png" alt="">
+        </div>
+        <div class="deals-text">
         <p>PlayStation 5 Console</p>
-        <h3>Price: N300,000</h3>
+        <h3>Price: NGN300,000</h3>
+        </div>
       </div>
-      <div>
-        <img src="img/deal-4.png" alt="">
+      <div class="deals-box">
+        <div class="deals-img">
+          <img src="img/deal-4.png" alt="">
+        </div>
+        <div class="deals-text">
         <p>44 Litres Hisense</p>
-        <h3>Price: N70,000</h3>
+        <h3>Price: NGN70,000</h3>
+        </div>
       </div>
     </div>
   </section>
@@ -277,10 +308,12 @@
     </div>
 
   </footer>
-
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="script.js"></script>
+      
+  
 </body>
 
 </html>
