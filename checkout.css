@@ -142,7 +142,7 @@ header {
   }
 
   .info form button, .payment-method form button, .door button{
-    width: 50%;
+    width: 250px;
     padding: 0.8rem 0.125rem;
     border-radius: 0.5rem;
     background-color: var(--btn-pri-bg);
@@ -303,7 +303,7 @@ input[type="radio"]:checked + label::after {
     padding: 3%;
     background-color: var(--primary-bg-clr);
     border-radius: 5px;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
     box-shadow: 0px 16px 24px 2px rgba(0, 0, 0, 0.14);
   }
 
@@ -338,6 +338,11 @@ input[type="radio"]:checked + label::after {
     letter-spacing: 0.00938rem;
     margin-top: 10px;
     cursor: pointer;
+    transition: 1s;
+  }
+
+  .product-img p:hover{
+    color: #970202;
   }
 
   .product-img p .fa{
@@ -552,4 +557,89 @@ input[type="radio"]:checked + label::after {
   footer{
     position: relative;
     top: 150px;
+  }
+
+  @media screen and (max-width: 1042px) {
+    .checkout-nav{
+      padding: 15px 4%;
+    }
+
+    .main-checkout{
+      padding: 30px 4%;
+    }
+  }
+
+  @media screen and (max-width: 776px){
+    .checkout-nav a, .checkout-nav span {
+      font-size: 13px;
+      padding: 3px 3px 0;
+    }
+  }
+
+  @media screen and (max-width: 652px){
+    .nav-links {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      top: 80px;
+      right: -100%;
+      height: 380px;
+      width: 100%;
+      transition: right .5s;
+      background: var(--primary-bg-clr);
+      box-shadow: 2px 1px 2px var(--secondary-bg-clr);
+      text-align: center;
+      z-index: 1;
+    }
+    .nav-links .top-nav .access-nav-top .access-box, .nav-links .top-nav .access-nav-bottom{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-links.active {
+      right: 0;
+    }
+  
+    .checkout-nav{
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 5px 2%;
+      top: 55px;
+      z-index: 20;
+    }
+
+    .checkout-nav a, .checkout-nav span {
+      font-size: 14px;
+      padding: 3px 3px 0;
+    }
+
+    .main-checkout{
+      top: 120px;
+      flex-direction: column;
+    }
+    .checkout-left{
+      width: 100%;
+      margin-right: 0;
+    }
+    .checkout-right{
+      width: 100%;
+      margin-left: 0;
+    }
+    .payment-method{
+      width: 100%;
+    }
+    .voucher{
+      width: 100%;
+    }
+    .cart {
+      margin-bottom: 50px;
+    }
+    .delivery {
+      margin-bottom: 0;
+    }
+    footer{
+      top: 100px;
+    }
   }

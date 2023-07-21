@@ -13,11 +13,11 @@
   <header>
     <section class="hero-checkout">
       <div class="hero-nav">
-        <div class="hero-nav-up">
+        <div class="hero-nav-up nav-links" id="navLinks">
           <div class="top-nav">
             <div class="access-nav-top">
               <div class="access-box">
-                <a href="" class="auth">Sign up</a> or
+                <a href="" class="auth">Sign up</a> <span>or</span>
                 <a href="" class="auth">Log in</a>
                 <a href="">Daily Deals</a>
                 <a href="">Help & Contact</a>
@@ -57,7 +57,7 @@
       </div>
 
       <div class="checkout-nav" id="checkoutNav">
-        <a href=""><i class="fa fa-chevron-left" aria-hidden="true"></i> Back To Home</a> <span>|</span>
+        <a href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back To Home</a> <span>|</span>
         <a href=""> Category:</a>
         <a href="">Electronics </a> <span><</span>
         <a href="">Laptop Accessories</a> <span><</span>
@@ -97,7 +97,7 @@
                 <p>Payment with Cards, Bank transfer or USSD</p>
                 <span>You will be redirected to a secure checkout page </span>
                 </div>
-                <button>CONFIRM PAYMENT METHOD</button>
+                <button>CONFIRM PAYMENT DETAILS</button>
                 </form>
         </div>
 
@@ -166,13 +166,13 @@
             <input type="radio" id="del" name="deli" checked> <label for="del">Door delivery </label>
             <div class="door">
               <div class="door-sec">
-                <input type="checkbox" id="check1" name="checks" class="checkbox-round "><label for="check1"><span>PRO</span> delivery (NGN 2,180)</label>
+                <input type="radio" id="check1" name="checks" class="checkbox-round " checked><label for="check1" ><span>PRO</span> delivery (NGN 2,180)</label>
                 <p>Delivery between 2-3 days</p>
                 <hr>
-                <input type="checkbox" class="checkbox-round" id="check2"><label for="check2" name="checks">Standard delivery (NGN 1,090)</label>
+                <input type="radio" class="checkbox-round" id="check2" name="checks"><label for="check2" >Standard delivery (NGN 1,090)</label>
                 <p>Delivery between 4-6 days</p>
               </div>
-              <button>CONFIRM PERSONAL DETAILS</button>
+              <button>CONFIRM DELIVERY DETAILS</button>
             </div>
         </div>
     </div>
