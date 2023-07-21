@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+     <!-- hero section -->
+  <header>
+    <section class="hero-checkout">
+      <div class="hero-nav">
+        <div class="hero-nav-up">
+          <div class="top-nav">
+            <div class="access-nav-top">
+              <div class="access-box">
+                <a href="" class="auth">Sign up</a> or
+                <a href="" class="auth">Log in</a>
+                <a href="">Daily Deals</a>
+                <a href="">Help & Contact</a>
+              </div>
+            </div>
+            <div class="access-nav-bottom">
+              <a href="">Ship To</a>
+              <a href="">Sell</a>
+              <select name="" id="">
+                <option value="">Watchlist </option>
+              </select>
+              <a href="">Advanced</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-nav-bar">
+          <div class="logo">
+            <a href="">
+              <img src="img/hero-logo.png" alt="">
+            </a>
+          </div>
+          <div class="search">
+            <input type="search" placeholder="Search for anything"> <button>Search</button>
+          </div>
+          <div class="icons">
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+          </div>
+
+          <div class="hamburger-menu">
+            <div class="ham-bar bar-top"></div>
+            <div class="ham-bar bar-mid"></div>
+            <div class="ham-bar bar-bottom"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkout-nav" id="checkoutNav">
+        <a href=""><i class="fa fa-chevron-left" aria-hidden="true"></i> Back To Home</a> <span>|</span>
+        <a href=""> Category:</a>
+        <a href="">Electronics </a> <span><</span>
+        <a href="">Laptop Accessories</a> <span><</span>
+        <a href="">Smart Phones</a>
+      </div>
+    </section>
+  </header>
+
+  <main class="main-checkout">
+    <div class="checkout-left">
+        <div class="info">
+            <div>
+                <h2><i class="fa fa-check-square-o" aria-hidden="true"></i> Customer information</h2>
+                <hr>
+                <h3>Personal Details</h3>
+                <p>compete personal to continue the end of the payment</p>
+            </div>
+            <form action="">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Mobile Number">
+                <select name="" id="">
+                    <option value="">Country</option>
+                    <option value="">Nigeria</option>
+                </select>
+                <input type="text" placeholder="Delivery Address">
+                <button>CONFIRM PERSONAL DETAILS</button>
+            </form>
+        </div>
+        <div class="payment-method">
+                <h2><i class="fa fa-check-square-o" aria-hidden="true"></i> Payment method</h2> <hr>
+                <form action="">
+                <div>
+                <input type="radio" name="payment" id="payment-opt1" checked> <label for="payment-opt1">Payment on delivery</label>
+                <p>With Cash, Bank transfers or Cards</p> <br>
+                <input type="radio" name="payment" id="payment-opt2"> <label for="payment-opt2">Cards</label>
+                <p>Payment with Cards, Bank transfer or USSD</p>
+                <span>You will be redirected to a secure checkout page </span>
+                </div>
+                <button>CONFIRM PAYMENT METHOD</button>
+                </form>
+        </div>
+
+        <div class="voucher">
+            <h3>Voucher code</h3>
+            <h4><span>TR34567</span> <i class="fa fa-check" aria-hidden="true"></i></h4>
+            <p>*Voucher NGN 3,OOO has been used</p>
+            <button>Submit</button>
+        </div>
+    </div>
+
+    <div class="checkout-right">
+        <div class="cart">
+            <h2>Carts</h2>
+            <div class="cart-product">
+                <div class="product-img">
+                    <img src="img/featured-2.png" alt="">
+                    <p><i class="fa fa-trash-o" aria-hidden="true"></i>REMOVE</p>
+                </div>
+                <div class="cart-text">
+                    <div>
+                        <h3>Dell XPS 17</h3>
+                        <h4>NGN 230,000</h4>
+                        <p>Quantity : <span>1</span></p>
+                    </div>
+                    <div class="add-sub">
+                      <h5>+</h5> <p>1</p> <h5>-</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-price">
+                <div>
+                    <h5>Subtotal</h5> <h5>NGN 229,180.00 </h5>
+                </div>
+                <hr>
+                <div>
+                    <h5>Items</h5> <h5>NGN 230,000.00</h5>
+                </div>
+                <div>
+                    <h5>Delivery Charge</h5> <h5>NGN 2,180.00</h5>
+                </div>
+                <div>
+                    <h5>Voucher used</h5> <span>_NGN 3,000.00</span>
+                </div>
+                <button>Pay NGN 229,180</button>
+            </div>
+        </div>
+
+        <div class="delivery">
+            <h2><i class="fa fa-check-square-o" aria-hidden="true"></i> Delivery</h2>
+            <hr>
+            <input type="radio" id="delivery" name="deli"> <label for="delivery">Pickup station (NGN 780)</label>
+            <p>Delivery between 4-6 days</p> <br>
+
+            <div class="station">
+                <span class="station-up"><p>Pickup station</p> <p><a href="">Select pickup station ></a></p></span><hr>
+                <span class="station-down">
+                    <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                    <span>
+                        <p>No pickup station selected</p>
+                        <p>To use this option, you need to add a pickup station near your location</p>
+                    </span>
+                </span>
+            </div>
+  
+            <input type="radio" id="del" name="deli" checked> <label for="del">Door delivery </label>
+            <div class="door">
+              <div class="door-sec">
+                <input type="checkbox" id="check1" name="checks" class="checkbox-round "><label for="check1"><span>PRO</span> delivery (NGN 2,180)</label>
+                <p>Delivery between 2-3 days</p>
+                <hr>
+                <input type="checkbox" class="checkbox-round" id="check2"><label for="check2" name="checks">Standard delivery (NGN 1,090)</label>
+                <p>Delivery between 4-6 days</p>
+              </div>
+              <button>CONFIRM PERSONAL DETAILS</button>
+            </div>
+        </div>
+    </div>
+  </main>
+
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="foot-top">
+      <div>
+        <h3>Buy</h3>
+        <li><a href="">Registration</a></li>
+        <li><a href="">Probuy Money Back Guarantee</a></li>
+        <li><a href="">Buying help</a></li>
+        <li><a href="">Stores</a></li>
+      </div>
+
+      <div>
+        <h3>Sell</h3>
+        <li><a href="">Start selling</a></li>
+        <li><a href="">Learn to sell</a></li>
+        <li><a href="">Affiliates</a></li>
+      </div>
+
+      <div>
+        <h3>Stay connected</h3>
+        <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+      </div>
+
+      <div>
+        <h3>About PR0BUY</h3>
+        <li><a href="">Company info</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Investors</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">Advertise with us</a></li>
+        <li><a href="">Policies</a></li>
+        <li><a href="">Verified rights</a></li>
+      </div>
+
+      <div>
+        <h3>Help & Contact</h3>
+        <li><a href="">Seller information center</a></li>
+        <li><a href="">Contact us</a></li>
+      </div>
+
+    </div>
+
+    <div class="partners">
+      <h1>PAYMENT METHODS & DELIVERY PARTNERS</h1>
+      <img src="img/partners.png" alt="">
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
