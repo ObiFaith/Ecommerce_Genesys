@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up Page</title>
-    <link rel="stylesheet" href="signup.css" />
-  </head>
-  <body>
-    <div class="head">
-      <div class="head1">
-        <img src="/images/Pro buy final 1.png" alt="" width="100px" />
-      </div>
-      <div class="head2">
-        <span> <a href="">Help Center</a> </span>
-      </div>
-    </div>
-    <div class="body">
-      <h2>Welcome</h2>
-      <br />
-      <h4>Sign in or Create an account</h4>
-      <br />
-      <br />
-      <form class="form">
-        <div>
-          <input type="text" placeholder="Email or Username" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="hero-img">
+            <img src="img/hero-logo.png" alt="">
         </div>
-        <br />
+
         <div>
-          <input type="text" placeholder="Password" />
+            <p>Already a member? <a href="login.html">Sign In</a></p>
         </div>
-        <br />
-        <div>
-          <button class="btn1">Continue</button>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <h1>Create an account</h1>
+            <div class="more">
+                <div class="acct-opt">
+                    <input type="radio" name="account" checked id="p-acct"><label for="p-acct" class="p-acct-l">Personal account</label>
+                    <input type="radio" name="account" id="b-acct"><label for="b-acct">Business account</label>
+                </div>
+            </div>
+            <form >
+                <input type="text" placeholder="First name" class="user" required> <br>
+                <input type="text" placeholder="Last name" class="user" required> <br>
+                <input type="email" placeholder="Email " class="user" required> <br>
+                <input type="password" placeholder="Password" class="user" required> <br>
+
+                <p>By <span>Creating an account</span>, you agree to our <a href="">User Agreement</a> and acknowledge reading our <a href="">User Privacy  Notice</a>.</p>
+                <p class="infoPrompt"></p>
+
+                <input type="submit" value="Continue" class="hero-btn">
+            </form>
         </div>
-        <br />
-        <br />
-        <div><p>Or</p></div>
-        <br />
-        <br />
-        <div>
-          <button class="btn2">Continue with Google</button>
-        </div>
-        <br />
-        <div>
-          <button class="btn3">Continue with Apple</button>
-        </div>
-        <br />
-        <br />
-        <div>
-          <p>
-            Stay signed in <br />
-            For Further support, you may visit our Help <br />
-            center or <br />
-            contact our customer service team.
-          </p>
-        </div>
-      </form>
-    </div>
-  </body>
+    </main>
+
+    <!-- hop-up section -->
+    <section class="hop-up">
+        <h3>A Verification Code Has been Sent To Your Email</h3>
+
+        <form >
+           <div class="codes">
+            <input type="text" class="code" placeholder="0" required>
+            <input type="text" class="code" placeholder="0" required>
+            <input type="text" class="code" placeholder="0" required>
+            <input type="text" class="code" placeholder="0" required>
+           </div>
+           <p class="hopPrompt"></p>
+            <button class="hop-btn">Verify</button>
+        </form>
+        <p>Didn’t receive the verification code? <br> <a href="">Request a new code</a></p>
+    </section>
+
+    <script src="signup.js"></script>
+</body>
 </html>
