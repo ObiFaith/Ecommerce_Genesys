@@ -265,6 +265,7 @@ a {
     line-height: normal;
     letter-spacing: 0.00938rem;
     cursor: pointer;
+    transition: 1s;
   }
 
   .hop-up button:hover{
