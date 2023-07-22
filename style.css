@@ -25,6 +25,7 @@ a {
 body,
 html {
   width: 100%;
+  color: var(--primary-color);
 }
 
 /* header styling */
@@ -174,6 +175,7 @@ header {
   flex-direction: row;
   padding: 15px 8%;
   z-index: 4;
+  font-size: 1rem;
 }
 
 .nav.scrolled {
@@ -183,7 +185,6 @@ header {
 
 .nav a {
   color: var(--secondary-color);
-  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -285,14 +286,12 @@ header {
 
 .featured-text .btn {
   font-size: 0.875rem;
-  font-style: normal;
+  display: inline-block;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.01563rem;
   padding: 10px 15px;
   width: 150px;
   border-radius: 5px;
-  border: 2px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   cursor: pointer;
   transition: 0.5s;
 }
@@ -303,12 +302,14 @@ header {
   border: 2px solid var(--btn-pri-bg);
 }
 
+.btn-orange.btn,
 .featured-text #btn {
   color: var(--secondary-color);
   background-color: var(--btn-pri-bg);
   border: 2px solid var(--btn-pri-bg);
 }
 
+.btn-orange.btn:hover,
 .featured-text #btn:hover {
   background-color: transparent;
   color: var(--btn-pri-bg);
@@ -414,7 +415,7 @@ header {
 }
 
 .categories .dir-arrows .fa {
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
   transition: transform 1s;
 }
@@ -621,57 +622,31 @@ footer .partners h1 {
 
 /* Desktop, laptop and tablet responsiveness */
 @media screen and (max-width: 1365px) {
-  .nav a {
-    margin: 0 5px;
-  }
+  .nav a {margin: 0 5px;}
 }
 @media screen and (max-width: 1042px) {
-  .nav a {
-    font-size: 14px;
-    margin: 0 2px;
-  }
-  .hero-nav {
-    padding: 5px 4%;
-  }
-  .hero-content {
-    padding-left: 5%;
-  }
-  .nav {
-    padding: 15px 4%;
-  }
-  .featured {
-    padding: 30px 4%;
-  }
-  .deals {
-    padding: 30px 4%;
-  }
-  .categories {
-    padding: 30px 4%;
-  }
-  .why {
-    padding: 30px 4%;
-  }
-  footer {
-    padding: 30px 4%;
-  }
+  .nav{font-size: 14px;}
+  .nav a { margin: 0 2px;}
+  .hero-nav {padding: 5px 4%;}
+  .hero-content {padding-left: 5%;}
+  .nav {padding: 15px 4%;}
+  .featured {padding: 30px 4%;}
+  .deals {padding: 30px 4%;}
+  .categories {padding: 30px 4%;}
+  .why {padding: 30px 4%;}
+  footer {padding: 30px 4%;}
 }
 
 @media screen and (max-width: 840px){
-  .access-box a,
+.access-box a,
 .access-nav-bottom a, .access-nav-bottom select, .access-box {
   padding-right: 8px;
   font-size: 13px;
   letter-spacing: 0.00938rem;
 }
-.hero-nav-bar .logo{
-  width: 100px;
-}
-.hero-nav-bar .logo img{
-  width: 100%;
-}
-.hero-nav .search {
-  width: 60%;
-}
+.hero-nav-bar .logo{width: 100px;}
+.hero-nav-bar .logo img{width: 100%;}
+.hero-nav .search {width: 60%;}
 
 .hero-nav input {
   padding: 7px;
@@ -692,10 +667,10 @@ footer .partners h1 {
   width: 100%;
   top: 70px;
   padding: 15px 4% 8px;
+  font-size: 10px;
 }
 .nav a {
   color: var(--secondary-color);
-  font-size: 10px;
   letter-spacing: 0.00938rem;
   padding: 5px;
   margin: 0 3px;

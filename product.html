@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROBUY</title>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- hero section -->
+    <section class="hero">
+      <div class="hero-nav">
+        <div class="hero-nav-up">
+          <div class="top-nav">
+            <div class="access-nav-top">
+              <div class="access-box">
+                <a href="" class="auth">Sign up</a> or
+                <a href="" class="auth">Log in</a>
+                <a href="">Daily Deals</a>
+                <a href="">Help & Contact</a>
+              </div>
+            </div>
+            <div class="access-nav-bottom">
+              <a href="">Ship To</a>
+              <a href="">Sell</a>
+              <select name="" id="">
+                <option value="">Watchlist </option>
+              </select>
+              <a href="">Advanced</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-nav-bar">
+          <div class="logo">
+            <a href="">
+              <img src="img/hero-logo.png" alt="">
+            </a>
+          </div>
+          <div class="search">
+            <input type="search" placeholder="Search for anything"> <button>Search</button>
+          </div>
+          <div class="icons">
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+          </div>
+
+          <div class="hamburger-menu">
+            <div class="ham-bar bar-top"></div>
+            <div class="ham-bar bar-mid"></div>
+            <div class="ham-bar bar-bottom"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav nav-links" id="navLinks">
+        <a href="index.html">
+          <span class="sign"> &lt;</span>
+          <a href="index.html">Back To Home</a> 
+        </a>       
+        <span class="sign">|</span>
+        <a href="#">Category: Electronics</a>
+        <span class="sign"> &lt;</span>
+        <a href="#">Laptop Accessories</a>
+        <span class="sign"> &lt;</span>
+        <a href="#">Smart Phones</a>
+      </div>
+    </section>
+  </header>
+
+  <!--Main Section-->
+  <main class="container">
+    <!--Product Image & Thumbnails-->
+    <section class="product">
+      <div class="bg-grey product_image">
+        <img src="./img/product-img.png" alt="Product Image : Dell XPS 17">
+      </div>
+      <!--Product Thumbnails-->
+      <div class="thumbnails">
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
+        <div class="flex">
+          <div><img src="./img/product-img-1.png" alt="Front View of Dell XPS 17"></div>
+          <div><img src="./img/product-img-2.png" alt="Top View of Dell XPS 17"></div>
+          <div><img src="./img/product-img-3.png" alt="Back View of Dell XPS 17"></div>
+        </div>  
+      </div>    
+    </section>
+    <!--Product Description-->
+    <section class="product_description bg-grey">
+      <div>
+        <h3 class="product_title">Dell XPS 17</h3>
+        <p><strong>Processor: </strong>12th Gen Intel Core i9</p>
+        <p><strong>Memory Ram: </strong>32GB, DDR5, 4800 MHz, dual- channel</p>
+        <p><strong>Hard Drive: </strong>1TB SSD</p>
+        <p><strong>Keyboard Type: </strong>Backlit</p>
+        <p><strong>Operating System: </strong>Windows 11</p>
+        <p><strong>Condition: </strong>Brand new</p>
+        <p><strong>Brand: </strong>Dell | Similar product from Dell</p>
+        <div>
+          <span>
+            </span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            <span>
+              (4.0) -400 Product Sold</span>
+        </div>
+        <p>We provide a <strong>one-year warranty</strong> in case there are any issues with our products</p>
+        <div>
+          <span><strong>Color: </strong></span>
+          <select name="color">
+            <option value="Silver">Silver</option>
+            <option value="Black">Black</option>
+            <option value="Grey">Grey</option>
+          </select>
+        </div>
+        <div class="product_quantity flex">
+          <p><strong>Quantity: </strong></p>
+          <span>+</span><span>1</span><span>-</span>
+        </div>
+        <hr class="clr-bg-primary">
+        <p class="product_price"><strong>Price: <span>NGN 230,000</span></strong></p>
+        <div class="featured-text">
+          <button class="btn clr" id="btn">Add To Cart</button>
+          <button class="btn white">Add To Watchlist</button>
+        </div>
+      </div>
+    </section>
+    <!--Delivery Section-->
+    <section class="delivery bg-grey">
+      <h3 class="delivery_title">DELIVERY & RETURNS</h3>
+      <h4>Choose Your Location</h4>
+      <div>
+        <input type="text" name="state" placeholder="State">
+        <input type="text" name="area" placeholder="Area">
+      </div>
+      <div>
+        <div class="d-flex">
+          <p><strong>Door Delivery</strong></p>
+          <a href="#product-detail">Details</a>
+        </div>
+        <div class="delivery_price">
+          <p><strong class="clr-orange">PRO </strong>Delivery NGN 2,180</p>
+          <p>Ready for delivery between 2-3 days when you order</p>
+        </div>
+        <div class="delivery_price">
+          <p>STANDARD Delivery NGN 1,090</p>
+          <p>Ready for delivery between 4-6 days when you order</p>
+        </div>
+      </div>
+      <div>
+        <div class="d-flex">
+          <p><strong>Pickup Station</strong></p>
+          <a href="#product-detail">Details</a>
+        </div>
+        <div class="delivery_price">
+          <p>Delivery NGN 780</p>
+          <p>Arriving at pickup station between 4-6 days when you order</p>
+        </div>
+      </div>
+      <div>
+        <div class="d-flex"><p><strong>Return Policy</strong></p></div>
+        <p>Free return within 15 days for Official store items and 7 days for other eligible item</p>
+        <a href="#">See more</a>
+      </div>
+    </section>
+    <!--Product Details-->
+    <section class="product_details bg-grey">
+      <div class="d-flex">
+        <h3 class="product_detail--title">PRODUCT  DETAILS</h3>
+        <span class="sign">&gt;</span>
+      </div>
+      <hr class="clr-bg-primary">
+      <p><strong>Description</strong></p>
+      <h3>Dell XPS17 9720 Ultrabook Laptop</h3>
+      <p>12th Gen Intel® Processors With 24 cores and 20 threads, get desktop-level performance to power intense creative programs (2D and 3D) in the convenience of a laptop.</p>
+      <p><strong>Colossal power and performance</strong></p>
+      <p>Even the most intensive creative projects with up to 12th Gen Intel® Core™ processors, NVIDIA® GeForce RTX™ graphics and DDR5 memory. Our most powerful XPS laptop to date. Dell Performance helps unlock access to four modes—quiet, performance, cool and optimized. Each mode tailors fan speeds and battery life, with performance mode unlocking the full power of your PC. Built to perform Take your projects to a new level. Get AI-acceleration in top creative apps backed by the NVIDIA....</p>      
+    </section>
+    <!--Seller Info-->
+    <section class="seller_info bg-grey">
+      <h3>SELLER INFORMATION</h3>
+      <div class="flex">
+        <div class="loader"><i class="fa-solid fa-circle-notch"></i></div>
+        <div class="flex flex-column no-gap">
+          <div class="d-flex cta">
+            <h4>Digital Computer</h4>
+            <button class="btn-orange btn clr" id="btn">Follow</button>
+          </div>
+          <div>
+            <p>Verification <i class="fa-solid fa-check"></i></p>
+            <p>850 Followers</p>
+            <p>86% Seller Rate</p>
+          </div>
+        </div>
+      </div>
+      <div class="seller_info--msg flex">
+        <a href="#">Send Mail</a>
+        <a href="#">Chat</a>
+        <a href="#">Visit Store</a>
+      </div>
+      <ul class="seller_info--rating">
+        <li><i class="fa-solid fa-circle green"></i> Order Fulfillment Rate: Excellent</li>
+        <li><i class="fa-solid fa-circle orange"></i> Quality Score: Average</li>
+        <li><i class="fa-solid fa-circle green"></i> Customer Rating: Good</li>
+      </ul>
+    </section>
+    <section class="customer_reviews bg-grey">
+      <div class="customer">
+        <div class="flex flex-column">
+          <div class="d-flex">
+            <h3 class="product_detail--title">CUSTOMER REVIEWS</h3>
+            <span class="sign">&gt;</span>
+          </div>
+          <hr class="clr-bg-primary">
+          <p class="verified">Comment From Verified Purchase</p>
+        </div>
+        <div class="reviews d-flex">
+          <div class="review">
+              <div class="d-flex">
+                <p>John Obi</p>
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <p>Excellent product and fast delivery.</p>
+          </div>
+          <div class="review">
+            <div class="d-flex">
+              <p>Sarah Michael</p>
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p>Great customer services and quality product.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  
+
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="foot-top">
+      <div>
+        <h3>Buy</h3>
+        <li><a href="">Registration</a></li>
+        <li><a href="">Probuy Money Back Guarantee</a></li>
+        <li><a href="">Buying help</a></li>
+        <li><a href="">Stores</a></li>
+      </div>
+
+      <div>
+        <h3>Sell</h3>
+        <li><a href="#">Start selling</a></li>
+        <li><a href="#">Learn to sell</a></li>
+        <li><a href="#">Affiliates</a></li>
+      </div>
+
+      <div>
+        <h3>Stay connected</h3>
+        <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i> &nbsp; Facebook</a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i> &nbsp;Instagram</a></li>
+      </div>
+
+      <div>
+        <h3>About PR0BUY</h3>
+        <li><a href="#">Company info</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Investors</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Advertise with us</a></li>
+        <li><a href="#">Policies</a></li>
+        <li><a href="#">Verified rights</a></li>
+      </div>
+
+      <div>
+        <h3>Help & Contact</h3>
+        <li><a href="#">Seller information center</a></li>
+        <li><a href="#">Contact us</a></li>
+      </div>
+
+    </div>
+
+    <div class="partners">
+      <h1>PAYMENT METHODS & DELIVERY PARTNERS</h1>
+      <img src="img/partners.png" alt="">
+    </div>
+
+  </footer>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>
