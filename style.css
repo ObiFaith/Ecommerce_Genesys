@@ -111,7 +111,7 @@ header {
   padding: 1rem 8%;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  z-index: 5;
+  z-index: 5;  
 }
 
 .hero-nav-up {
@@ -171,12 +171,12 @@ header {
 .nav {
   position: fixed;
   width: 100%;
-  top: 112px;
+  top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding: 15px 8%;
+  padding: 1.5rem 8% 1rem;
   z-index: 4;
   font-size: 1rem;
 }

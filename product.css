@@ -42,23 +42,23 @@ i.orange{color: var(--clr-orange); font-size: .6rem}
 
 /* MAIN */
 main{
-    padding-block: 3rem;
+    padding-top: 10rem;
     display: grid;
     gap: 1.4rem;
     align-items: start;  
 }
 
 /* SECTIONS GLOBAL STYLING */
-.delivery, .customer_reviews,
+.delivery_return, .customer_reviews,
 .product_description,
 .product_details, .seller_info{padding: 2rem 1.5rem; border-radius: .5rem;}
 
 .product_title, .product_price,
-.delivery_title, .product_detail--title,
+.delivery_return--title, .product_detail--title,
 .seller_info h3{font-size: 1.3125rem;}
 
 .product_title,
-.delivery_title,
+.delivery_return--title,
 .seller_info h3{padding-bottom: 1rem;}
 
 /* PRODUCT IMAGE SECTION */
@@ -80,11 +80,11 @@ main{
 .featured-text .btn{width: 45%; text-align: center;}
 
 /* DELIVERY SECTION */
-.delivery input{width: 100%; border-radius: 10px; padding: .8rem; border: 1px solid #333; outline: none; margin-top: .8rem; background-color: transparent;}
-.delivery input::placeholder{color: #C2C2C2;font-size: 1.125rem;}
-.delivery_price p:nth-child(1){font-weight: 500; padding-top: .2rem}
+.delivery_return input{width: 100%; border-radius: 10px; padding: .8rem; border: 1px solid #333; outline: none; margin-top: .8rem; background-color: transparent;}
+.delivery_return input::placeholder{color: #C2C2C2;font-size: 1.125rem;}
+.delivery_return--price p:nth-child(1){font-weight: 500; padding-top: .2rem}
 
-.delivery .d-flex, .verified,
+.delivery_return .d-flex, .verified,
 .product_details hr + p,
 .reviews, .seller_info--msg{padding-top: 1rem;}
 
@@ -123,9 +123,9 @@ main{
     .seller_info--msg a{padding: .2rem 1rem;}
 }
 @media (min-width: 800px) {
-    .hero-nav{padding-block: 1rem !important;}
+    /* .hero-nav{padding-block: 1rem !important;} */
     main{        
-        margin-top: 2rem;    
+        padding-top: 12rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
             'product product_description'
@@ -139,7 +139,7 @@ main{
     /* GRID SECTIONS */
     .product{grid-area: product;}
     .product_description{grid-area: product_description;}
-    .delivery{grid-area: delivery;}
+    .delivery_return{grid-area: delivery;}
     .product_details{grid-area: product_details;}
     .seller_info{grid-area: seller_info;}
     .customer_reviews{grid-area: customer_reviews;}  
@@ -151,6 +151,7 @@ main{
 
 @media (min-width: 1200px) {
     main{
+        padding-top: 15rem;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
             'product product_description delivery'

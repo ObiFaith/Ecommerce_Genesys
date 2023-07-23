@@ -4,25 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PROBUY</title>  
+  <title>Products | PROBUY</title>  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="checkout.css">
   <link rel="stylesheet" href="product.css">
 </head>
 
 <body>
-  <!-- Header section -->
+  <!-- hero section -->
   <header>
-    <!-- hero section -->
-    <section class="hero">
+    <section class="hero-checkout">
       <div class="hero-nav">
-        <div class="hero-nav-up">
+        <div class="hero-nav-up nav-links" id="navLinks">
           <div class="top-nav">
             <div class="access-nav-top">
               <div class="access-box">
-                <a href="./signup.html" class="auth">Sign up</a> or
+                <a href="./signup.html" class="auth">Sign up</a> <span>or &nbsp;</span>
                 <a href="./login.html" class="auth">Log in</a>
                 <a href="#">Daily Deals</a>
                 <a href="#">Help & Contact</a>
@@ -40,7 +40,7 @@
         </div>
         <div class="hero-nav-bar">
           <div class="logo">
-            <a href="#">
+            <a href="./index.html">
               <img src="img/hero-logo.png" alt="">
             </a>
           </div>
@@ -61,16 +61,11 @@
         </div>
       </div>
 
-      <div class="nav nav-links" id="navLinks">
-        <a href="index.html">
-          <span class="sign"> &lt;</span>
-          <a href="index.html">Back To Home</a> 
-        </a>       
-        <span class="sign">|</span>
-        <a href="#">Category: Electronics</a>
-        <span class="sign"> &lt;</span>
-        <a href="#">Laptop Accessories</a>
-        <span class="sign"> &lt;</span>
+      <div class="checkout-nav" id="checkoutNav">
+        <a href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back To Home</a> <span>|</span>
+        <a href="#"> Category:</a>
+        <a href="#">Electronics </a> <span><</span>
+        <a href="#">Laptop Accessories</a> <span><</span>
         <a href="#">Smart Phones</a>
       </div>
     </section>
@@ -137,9 +132,9 @@
         </div>
       </div>
     </section>
-    <!--Delivery Section-->
-    <section class="delivery bg-grey">
-      <h3 class="delivery_title">DELIVERY & RETURNS</h3>
+    <!--Delivery_Return Section-->
+    <section class="delivery_return bg-grey">
+      <h3 class="delivery_return--title">DELIVERY & RETURNS</h3>
       <h4>Choose Your Location</h4>
       <div>
         <input type="text" name="state" placeholder="State">
@@ -150,11 +145,11 @@
           <p><strong>Door Delivery</strong></p>
           <a href="#product-detail">Details</a>
         </div>
-        <div class="delivery_price">
+        <div class="delivery_return--price">
           <p><strong class="clr-orange">PRO </strong>Delivery NGN 2,180</p>
           <p>Ready for delivery between 2-3 days when you order</p>
         </div>
-        <div class="delivery_price">
+        <div class="delivery_return--price">
           <p>STANDARD Delivery NGN 1,090</p>
           <p>Ready for delivery between 4-6 days when you order</p>
         </div>
@@ -164,7 +159,7 @@
           <p><strong>Pickup Station</strong></p>
           <a href="#product-detail">Details</a>
         </div>
-        <div class="delivery_price">
+        <div class="delivery_return--price">
           <p>Delivery NGN 780</p>
           <p>Arriving at pickup station between 4-6 days when you order</p>
         </div>
@@ -312,6 +307,6 @@
  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- <script src="script.js"></script>    --> 
+    <script src="script.js"></script>    
 </body>
 </html>

@@ -14,6 +14,7 @@ heroBtn.addEventListener("click", (e)=>{
         isEmpty = true;
         infoPrompt.textContent = "Please fill in your details"
         infoPrompt.style.color = "red"
+        infoPrompt.style.marginBottom = "20px"
       }
     });
   

@@ -40,10 +40,10 @@ header {
   .checkout-nav {
     position: fixed;
     width: 100%;
-    top: 112px;
+    top: 100px;
     display: flex;
     flex-direction: row;
-    padding: 15px 8%;
+    padding: 1.5rem 8% 1rem;
     z-index: 4;
     background-color: var(--secondary-bg-clr);
   }
