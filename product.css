@@ -45,8 +45,7 @@ main{
     padding-block: 3rem;
     display: grid;
     gap: 1.4rem;
-    align-items: start;      
-    grid-template-columns: repeat(2, 1fr);
+    align-items: start;  
 }
 
 /* SECTIONS GLOBAL STYLING */
@@ -78,7 +77,7 @@ main{
 .product_quantity{padding-top: .5rem;}
 .product_quantity span{border: 1px solid #333; padding-inline: .5rem; margin-left: .5rem; font-weight: 600;}
 .featured-text{display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;}
-.featured-text .btn{width: 45%;}
+.featured-text .btn{width: 45%; text-align: center;}
 
 /* DELIVERY SECTION */
 .delivery input{width: 100%; border-radius: 10px; padding: .8rem; border: 1px solid #333; outline: none; margin-top: .8rem; background-color: transparent;}
@@ -116,7 +115,7 @@ main{
 .review{border: 1.5px solid var(--clr-dark-blue); padding: .5rem 1rem; border-radius: .5rem;}
 .product_description i,
 .review i{color: #F9A603}
-.review + .review{margin-left: 1rem;}
+.review + .review{margin-top: 1rem;}
 
 @media (max-width: 652px) {
     .sign{display: none;}
@@ -124,7 +123,10 @@ main{
     .seller_info--msg a{padding: .2rem 1rem;}
 }
 @media (min-width: 800px) {
-    main{
+    .hero-nav{padding-block: 1rem !important;}
+    main{        
+        margin-top: 2rem;    
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
             'product product_description'
             '. product_description'
@@ -141,8 +143,10 @@ main{
     .product_details{grid-area: product_details;}
     .seller_info{grid-area: seller_info;}
     .customer_reviews{grid-area: customer_reviews;}  
-    
-    .seller_info--rating{display: flex; justify-content: space-between; align-items: center;}
+        
+    .seller_info--rating{display: flex; justify-content: space-between; align-items: center;}    
+    .reviews{display: flex; gap: 1.5rem;}
+    .review + .review {margin: 0}
 }
 
 @media (min-width: 1200px) {
