@@ -1,6 +1,6 @@
 # ProBuy | Ecommerce Product
 
-This is a solution to [Genesys Upskill Project for Group 16](). **ProBuy** is a Business to Business *(B2B)* Ecommerce Website that allow users to buy and sell electronic gadgets easily anywhere, anytime.
+This is a solution to [Genesys Upskill Project for Group 16](https://obifaith.github.io/PROBUY/). **ProBuy** is a Business to Business *(B2B)* Ecommerce Website that allow users to buy and sell electronic gadgets easily anywhere, anytime.
 
 ## Table of Content
 - [ProBuy | Ecommerce Product](#probuy--ecommerce-product)
@@ -8,15 +8,11 @@ This is a solution to [Genesys Upskill Project for Group 16](). **ProBuy** is a 
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
-    - [Links](#links)
+    - [Page Links](#page-links)
   - [Process](#process)
     - [Built with](#built-with)
-    - [What we learned](#what-we-learned)
-      - [Product Designer](#product-designer)
-      - [Web Developer](#web-developer)
-    - [Useful Resources](#useful-resources)
   - [Team](#team)
-    - [Product Designer](#product-designer-1)
+    - [Product Designer](#product-designer)
     - [Web Dveloper](#web-dveloper)
   - [Acknowledgement](#acknowledgement)
 
@@ -26,26 +22,32 @@ This is a solution to [Genesys Upskill Project for Group 16](). **ProBuy** is a 
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
-- 
+- User friendly and Able to navigate among the webpages
+- Transitions and User Interactions
 
 ### Screenshot
-  ![Images]()
+  ![Images](./img/PROBUY.png)
 
-### Links
-- [Link1]()
-- [Link2]()
+### Page Links
+- [PROBUY | Homepage](https://obifaith.github.io/PROBUY/)
+- [Product page | PROBUY](https://obifaith.github.io/PROBUY/product.html)
+- [Checkout page | PROBUY](https://obifaith.github.io/PROBUY/checkout.html)
+- [Summary page | PROBUY](https://obifaith.github.io/PROBUY/summary.html)
+- [Sign Up page | PROBUY](https://obifaith.github.io/PROBUY/summary.html)
+- [Login page | PROBUY](https://obifaith.github.io/PROBUY/summary.html)
 
 ## Process
 
 ### Built with
 - Semantic HTML5 markup
-- CSS
+- CSS 3
+- CSS Transition and Animations
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 - JavaScript
 
-### What we learned
+<!-- ### What we learned
 
 #### Product Designer
 - 
@@ -54,22 +56,22 @@ Users should be able to:
 - 
 
 ### Useful Resources
-- [Link1]()
+- [Link1]() -->
 
 ## Team 
 
 ### Product Designer
-- [Otu Chidiebere]()
+- [Otu Chidiebere](https://twitter.com/Eldante0)
 - [Amarachi Chukwu]()
 - [Okafor Mary]()
   
 ### Web Dveloper
-- [Obi Faith]()
-- [Charles Obimnaeto]()
-- [Igwe David]()
+- [Obi Faith](https://github.com/ObiFaith/)
+- [Charles Obimnaeto](https://github.com/IamNaeto)
+- [Igwe David](https://github.com/Igwedave)
 
 ## Acknowledgement
 
-I will like to thank every member of the team for all their effort for making this project a success and Our Supervisors, **Mr Emeka** (Web Developer) and **Mr Victor** (Product Designer)
+I will like to thank every member of the team for their effort for making this project a success and Our Supervisors, **Mr Reuben Odirichukwu** (Web Developer) and **Mr Victor Ogbukaa** (Product Designer)
 
-As the team lead, I am happy for the process and experience working with you all. Thank you
+As the Team Lead, I am happy working with you all. Thank you.

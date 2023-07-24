@@ -232,13 +232,13 @@ header {
   margin: 20px 0;
 }
 
-.hero-content button {
-  padding: 15px;
+.hero-content a {
+  padding: 10px 15px;
   width: 200px;
   background-color: #F15A29;
   border: 2px solid #F15A29;
   color: var(--secondary-color);
-  font-style: normal;
+  text-align: center;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.01563rem;
@@ -247,7 +247,7 @@ header {
   cursor: pointer;
 }
 
-.hero-content button:hover {
+.hero-content a:hover {
   background: transparent;
   border: 2px solid #F15A29;
 }
@@ -310,6 +310,7 @@ header {
   color: var(--secondary-color);
   background-color: var(--btn-pri-bg);
   border: 2px solid var(--btn-pri-bg);
+  text-align: center;
 }
 
 .btn-orange.btn:hover,
