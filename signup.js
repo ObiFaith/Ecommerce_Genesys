@@ -3,7 +3,6 @@ const heroBtn = document.querySelector(".hero-btn")
 const hopUp = document.querySelector(".hop-up")
 const infoPrompt = document.querySelector(".infoPrompt")
 const hopPrompt = document.querySelector(".hopPrompt")
-const hopBtn = document.querySelector(".hop-btn")
 
 heroBtn.addEventListener("click", (e)=>{
     e.preventDefault()
@@ -41,9 +40,7 @@ hopUp.addEventListener("click", (e) => {
   
     if (!isEmpty) {
         hopPrompt.textContent = ""
-        hopBtn.addEventListener('click', () =>{
-           window.location = '/login.html';
-        })
+      window.location = '/login.html';
     }
   });
   
